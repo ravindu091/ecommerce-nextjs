@@ -1,14 +1,15 @@
+"use server"
+import { isSessionHave } from '@/actions/loginAction'
 import { auth } from '@/auth'
 import SignInButton from '@/components/SignInButton'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { NextResponse } from 'next/server'
 import React from 'react'
 
 async function page() {
 
-    const session = await auth()
-    if(session){
+    const session = await isSessionHave();
 
-    }
   return (
     <div className='flex justify-center items-center w-screen h-screen bg-[#f5fff9]'>
         
