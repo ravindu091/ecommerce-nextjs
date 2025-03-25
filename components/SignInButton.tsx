@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 export default function SignInButton({provider}:{provider:string}) {
-
+  
   let providerName;
 
   switch (provider) {

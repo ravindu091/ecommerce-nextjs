@@ -1,8 +1,7 @@
 'use server'
  
 import { permanentRedirect } from 'next/navigation'
-import { revalidateTag } from 'next/cache'
-import { auth } from '@/auth'
+import { auth, signIn } from '@/auth'
  
 export async function isSessionHave() {
     const session = await auth();
@@ -12,3 +11,4 @@ export async function isSessionHave() {
     }
 
 }
+

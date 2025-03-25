@@ -3,7 +3,6 @@ import { isSessionHave } from '@/actions/loginAction'
 import { auth } from '@/auth'
 import SignInButton from '@/components/SignInButton'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { NextResponse } from 'next/server'
 import React from 'react'
 
 async function page() {
